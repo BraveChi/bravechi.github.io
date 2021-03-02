@@ -1,5 +1,5 @@
 theme: jekyll-theme-modernist
-webrick:
-  headers:
-    My-Header: 炼金术士brave
-    My-Other-Header: 个人博客站点
+
+title : 炼金术士brave
+name: '个人博客站点'
+description: ''
