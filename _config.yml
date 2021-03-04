@@ -1,5 +1,41 @@
-theme: jekyll-theme-modernist
+title : Brave Chi
+name: 'personal site'
+description: 'personal site, devops, deeplearning, java, python, losser '
 
-title : 炼金术士brave
-name: '个人博客站点'
-description: ''
+markdown: kramdown
+highlighter: rouge
+javascript_enabled: true
+
+featured_posts_title: Unrelated
+featured_posts:
+  - url: '#'
+    title: 'Featured post #1'
+  - url: '#'
+    title: 'Featured post #2'
+  - url: '#'
+    title: 'Featured post #3'
+
+collections:
+  news:
+    title: News
+    default_open: false
+    output: true
+  posts:
+    title: Essays
+    default_open: true
+    output: true
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      title: Essays
+      permalink: /post/:title
+  - scope:
+      type: news
+    values:
+      title: News
+      permalink: /news/:title
+
+plugins:
+  - jekyll-sitemap
